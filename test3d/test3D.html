@@ -1,0 +1,28 @@
+<html>
+<head>
+  <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
+</head>
+
+<body>
+
+
+
+
+        <a-scene
+
+          <a-assets>
+
+            <img id="skyTexture" src="ciel.jpg">
+
+            <a-asset-item id="monkey" src="licorne.glb"></a-asset-item>
+            </a-assets>
+
+
+          <a-sky src="#skyTexture"><a-sky>
+          <a-entity gltf-model="#monkey"
+                    position="0 1.6 -5"></a-entity>
+        </a-scene>
+  </body>
+
+
+</html>

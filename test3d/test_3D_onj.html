@@ -1,0 +1,29 @@
+<html>
+<head>
+  <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
+</head>
+
+<body>
+
+
+
+
+        <a-scene
+
+          <a-assets>
+
+            <img id="skyTexture" src="ciel.jpg">
+
+            <a-asset-item id="monkey-obj" src="suzanne.obj"></a-asset-item>
+            <a-asset-item id="monkey-mtl" src="suzanne.mtl"></a-asset-item>
+            </a-assets>
+
+
+          <a-sky src="#skyTexture"><a-sky>
+          <a-entity obj-model="obj: #monkey-obj;mtl: #monkey-mtl"
+                    position="0 1.6 -5"></a-entity>
+        </a-scene>
+  </body>
+
+
+</html>
